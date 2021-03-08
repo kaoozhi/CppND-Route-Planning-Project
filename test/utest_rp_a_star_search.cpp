@@ -41,7 +41,8 @@ std::vector<std::byte> ReadOSMData(const std::string &path) {
 
 class RoutePlannerTest : public ::testing::Test {
   protected:
-    std::string osm_data_file = "../map.osm";
+    // std::string osm_data_file = "../map.osm";
+    std::string osm_data_file = "/Users/kaoozhi/Google Drive/Learning/Udacity/CPPND/Solutions/2_Foundations/5_Extending_the_OpenStreetMap/map.osm";
     std::vector<std::byte> osm_data = ReadOSMData(osm_data_file);
     RouteModel model{osm_data};
     RoutePlanner route_planner{model, 10, 10, 90, 90};

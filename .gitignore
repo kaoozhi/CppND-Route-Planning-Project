@@ -6,3 +6,7 @@ test.cpp
 build/
 bin/
 lib/
+.vscode
+buildX/
+thirdparty/
+.DS_store
