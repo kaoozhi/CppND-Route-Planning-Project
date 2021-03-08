@@ -1,19 +1,9 @@
-# Route Planning Project
+# C++ A* Route Planning Project
 
-This repo contains the starter code for the Route Planning project.
+This project implements an A* route planner running on OpenStreetMap in C++, original udacity's CppND-Route-Planning-Project repo goes [here](https://github.com/udacity/CppND-Route-Planning-Project)
 
-<img src="map.png" width="600" height="450" />
+<img src="versailles.png" width="500" height="450" />
 
-## Cloning
-
-When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
-```
-git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules
-```
-or with SSH:
-```
-git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-submodules
-```
 
 ## Dependencies for Running Locally
 * cmake >= 3.11.3
@@ -29,6 +19,7 @@ git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-subm
 * IO2D
   * Installation instructions for all operating systems can be found [here](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md)
   * This library must be built in a place where CMake `find_package` will be able to find it
+  * A detailed MacOS installation procedure can be found here [here](https://github.com/mylescallan/OpenStreetMaps_C-)
 
 ## Compiling and Running
 
@@ -51,11 +42,3 @@ Or to specify a map file:
 ```
 ./OSM_A_star_search -f ../<your_osm_file.osm>
 ```
-
-## Testing
-
-The testing executable is also placed in the `build` directory. From within `build`, you can run the unit tests as follows:
-```
-./test
-```
-
